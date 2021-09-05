@@ -3,6 +3,7 @@ package ui_automation.utilities;
 import org.openqa.selenium.WebDriver;
 
 public class Driver {
+    ThreadLocal<WebDriver> driver=new ThreadLocal<WebDriver>();// thread local driver object for webdriver
     private Driver(){
 
     }
@@ -11,7 +12,7 @@ public class Driver {
         return instance;
     }
 
-    ThreadLocal<WebDriver> driver=new ThreadLocal<WebDriver>();// thread local driver object for webdriver
+
 
     public WebDriver getDriver(){
         return driver.get();
