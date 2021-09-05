@@ -14,7 +14,7 @@ Background:
   @MB-002 @Smoke
   Scenario: User should not login with incorrect info
      When I login with username as "abc" and password as "abc"
-     Then I should see error message as "Invalid username or password blah blah"
+     Then I should see error message as "Invalid username or password"
 
   @MB-005
   Scenario: Error message with missing password
