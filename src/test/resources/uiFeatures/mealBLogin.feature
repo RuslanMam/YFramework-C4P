@@ -3,7 +3,7 @@ Feature: Login
 Background:
   Given I'm on the MealB landing page
 
-  @MB-001 @Smoke
+  @MB-001
   Scenario: User can login successfully
       When I click on the Sign In button
       Then I enter MealB username as "elnar"
