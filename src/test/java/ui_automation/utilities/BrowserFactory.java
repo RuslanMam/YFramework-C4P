@@ -35,7 +35,7 @@ public class BrowserFactory {
                             case "chromeRemote":
                                 ChromeOptions chrOptions = new ChromeOptions();
                                 try {
-                                    driver = new RemoteWebDriver(new URL("http://3.80.239.101/:4444/wd/hub"), chrOptions);
+                                    driver = new RemoteWebDriver(new URL("http://54.88.214.189:4444/wd/hub"), chrOptions);
 
                                 } catch (MalformedURLException e) {
                                     e.printStackTrace();
@@ -52,7 +52,7 @@ public class BrowserFactory {
                             case "firefoxRemote":
                                 FirefoxOptions firOptions = new FirefoxOptions();
                                 try {
-                                    driver = new RemoteWebDriver(new URL("http://3.80.239.101/:4444/wd/hub"), firOptions);
+                                    driver = new RemoteWebDriver(new URL("http://54.88.214.189:4444/wd/hub"), firOptions);
 
                                 } catch (MalformedURLException e) {
                                     e.printStackTrace();
